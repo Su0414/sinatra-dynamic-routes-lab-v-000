@@ -21,8 +21,6 @@ class App < Sinatra::Base
           @arr << @phrase_1
         end
       @arr.join("\n")
-      end
-
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
