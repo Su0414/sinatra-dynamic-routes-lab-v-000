@@ -17,7 +17,7 @@ class App < Sinatra::Base
     @phrase_1 = params[:phrase]
       @arr = []
         @count = 0
-        while @count < @num do
+        while @count < @num.to_i do
           @arr << @phrase_1
         end
       @arr.join(" ")
