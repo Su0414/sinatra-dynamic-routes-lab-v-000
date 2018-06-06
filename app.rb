@@ -13,6 +13,15 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
+    @num = params[:number]
+    @phrase_1 = params[:phrase]
+    @arr = []
+      @count = 0
+      while @count < @num do
+        @arr << @phrase_1
+      end
+    @arr
+      end
 
   end
 
