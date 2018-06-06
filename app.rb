@@ -37,9 +37,9 @@ class App < Sinatra::Base
       "#{@num_1.to_i + @num_2.to_i}"
     elsif @op == "subtract"
       "#{@num_1.to_i - @num_2.to_i}"
-    elsif @op.equal?("multiply")
+    elsif @op == "multiply"
       "#{@num_1.to_i * @num_2.to_i}"
-    elsif @op.equal?("divide")
+    elsif @op == "divide"
       "#{@num_1.to_i / @num_2.to_i}"
     end
 
