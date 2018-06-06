@@ -19,6 +19,7 @@ class App < Sinatra::Base
         @count = 0
         while @count < @num.to_i do
           @arr << @phrase_1
+          @count = @count + 1
         end
       @arr.join(" ")
   end
